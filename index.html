@@ -1,10 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOIST Student Information System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <style>
-        body {
+        html, body {
+            height: 100%;
+            margin: 0;
             background-color: #f8f9fa;
         }
         .login-container {
@@ -12,6 +17,12 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 2rem;
+            width: 90%; /* Adjust width for mobile */
+            max-width: 400px; /* Max width for larger screens */
+            margin: auto; /* Center the container */
+            position: relative; /* Position relative for centering */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust for centering */
         }
         .login-header {
             margin-bottom: 1.5rem;
@@ -83,7 +94,7 @@
     </script>
 </head>
 <body class="flex items-center justify-center min-h-screen">
-    <div class="login-container w-full max-w-md">
+    <div class="login-container">
         <div class="login-header text-center">
             <img src="https://raw.githubusercontent.com/Nico192008/Moist-Student-portal/refs/heads/main/IMG_20250125_104230.jpg" alt="MOIST College Logo" class="mx-auto mb-4"/>
             <h1 class="text-3xl font-bold">MOIST</h1>
@@ -110,4 +121,4 @@
         </div>
     </div>
 </body>
-  </html>
+                    </html>
